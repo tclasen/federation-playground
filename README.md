@@ -15,3 +15,9 @@ docker-compose up --build
 ```
 tilt up --hud
 ```
+
+## Components:
+- Gateway: Apollo-Gateway Federation Server
+- Products: Flask + Ariadne
+- Users: FastAPI + Ariadne
+- Reviews: Ariadne Native ASGI Server
