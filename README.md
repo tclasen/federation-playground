@@ -16,6 +16,13 @@ docker-compose up --build
 tilt up --hud
 ```
 
+## Accessing GraphQL Playground:
+
+Point your browser to:
+```
+http://localhost:8000/graphql
+```
+
 ## Components:
 - Gateway: Apollo-Gateway Federation Server
 - Products: Flask + Ariadne
