@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: products
+spec:
+  selector:
+    matchLabels:
+      app: products
+  template:
+    metadata:
+      labels:
+        app: products
+    spec:
+      containers:
+      - name: products
+        image: products
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: products
+spec:
+  ports:
+  - port: 8000
+  selector:
+    app: products
